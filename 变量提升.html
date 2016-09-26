@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		
+		//通过var 来定义变量,会把它提升到最开头，然后在一次执行
+
+		var a = 'hello';
+		console.log(a);
+
+
+		// //js 
+		// var a ;   //undefined
+		// a = 'hello';
+		// console.log(a);  //'hello'
+
+
+
+		// console.log(a);    //undefined
+		// var a = 'hello';
+
+
+		// console.log(a);   // a is not defined 
+		// a = 'hello';
+
+
+
+
+
+		//函数定义也会提升到语句开头执行 
+		// var a = 'hello';
+
+		// function bb(){
+		// 	var a = 'world';
+		// 	console.log(a);
+		// };
+
+
+		// // bb更换下里面的语句顺序
+		// function bb(){
+		// 	console.log(a);
+		// 	var a = 'world';
+
+
+		// 	//js 执行顺序
+		// 	// var a;  //undefined
+		// 	// console.log(a);  //undefined
+		// 	// a = 'world';
+		// }
+
+		// bb();
+
+
+		// //js执行过程
+		// var a ;
+		// function bb(){
+		// 	var a = 'world';
+		// 	console.log(a);
+		// };
+		// a = 'hello';
+		// bb();   //函数调用的时候，不是把函数拿到这里来执行，只是去执行该函数里的语句
+
+		// // bb函数里的执行过程
+		// var a;
+		// a = 'world';
+		// //js里，获取变量的时候，采用就近原则
+		// console.log(a);  //'world'
+
+
+		
+	</script>
+</body>
+</html>
